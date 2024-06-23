@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "pt">
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Trabalho acadêmico de PW1">
+	<meta name="keywords" content="Van Gogh, artes">
+	<meta name="author" content="Caroline Othz Salles">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/jpg" href="img/flor.png">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script language="javascript" type="text/javascript">
+        function time() {
+            var nome = form1.nome.value;
+            var email = form1.email.value;
+
+            if (nome === "") {
+                alert("Preencha o campo nome");
+                form1.nome.focus();
+                return false;
+            }
+            if (email === "") {
+                alert("Preencha o campo com seu email");
+                form1.email.focus();
+                return false;
+            }
+            return true; // Retorna true se todos os campos estiverem preenchidos
+        }
+    </script>
+</head>
+<body>
+    <div id="all">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="conteudo.html">Anos finais</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div class="quadro">
+        <center>
+            <form name="form1" action="rec.html" method="post" onsubmit="return time()">
+                Nome: <input type="text" name="nome" placeholder="Seu nome"><br>
+                Email: <input type="text" name="email" id="email" placeholder="Seu email"><br>
+                Você gostou do site?  
+                <input type="radio" id="sim" name="resposta" value="sim"><label for="sim">Sim</label>
+                <input type="radio" id="nao" name="resposta" value="nao"><label for="nao">Não</label><br>
+                Comentário:<br><textarea name="comentario" cols="54" rows="20"></textarea><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </center>
+    </div>
+    <footer>
+        <center>Caroline Othz Salles - &copy; Todos os direitos reservados<br>Trabalho acadêmico sem fins lucrativos</center>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Arquivo estilo.css menu centralizado */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Century Gothic", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #403898;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+a:hover {
+    font-size: 20px;
+    color: red;
+}
+
+#all {
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F55C6;
+    padding: 0 10px;
+    margin-bottom: 20px; /* Adicionado para espaçamento inferior */
+}
+
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ul.menu li {
+    margin: 0 10px; /* Ajustado o espaçamento horizontal */
+    height: 100%; /* Garante que os li preencham a altura do contêiner */
+    display: flex;
+    align-items: center;
+}
+
+ul.menu li a {
+    color: #ffffff;
+    padding: 10px 15px; /* Adicionado espaçamento interno */
+    border-radius: 5px; /* Adicionado arredondamento */
+}
+
+ul.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Adicionado fundo ao passar o mouse */
+}
+
+textarea {
+    resize: none;
+    width: 100%; /* Ajustado para ocupar toda a largura do container pai */
+}
+
+footer {
+    width: 100%;
+    background-color: #5F55C6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0; /* Ajustado o espaçamento vertical */
+}
